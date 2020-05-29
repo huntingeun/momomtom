@@ -1,0 +1,94 @@
+body {
+  background-color: #4F16D1;
+  color: #FFFFFF;
+  font-family: "HelveticaNeue-Light", sans-serif;
+  text-align: center;
+  margin: auto;
+}
+
+
+h1 {
+  transition: 0.5s ease-in-out;
+  font-size: 85px;
+  font-family: "HelveticaNeue-Medium"
+  margin-bottom: 0;
+}
+
+form {
+ border: 0;
+ font-family: "HelveticaNeue-Light", sans-serif;
+}
+
+h4, .span {
+  font-family: "HelveticaNeue-Light", sans-serif;
+}
+
+
+
+footer {
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+
+ul{
+  list-style: none;
+  padding-left:0px;
+  }
+
+li {
+  display: block;
+}
+
+
+li button {
+    cursor: pointer;
+    padding: 0.35em 0.5em 0.35em 0.5em;
+    border-radius: 0.35em;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    display: inline;
+  };
+  
+
+.btn {
+  cursor: pointer;
+  style: none;
+}
+
+.form,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+  font-family: "HelveticaNeue-Light", sans-serif;
+  margin-top: 0;
+}
+/* 현재 none 이었다가도 나중에 display:blcok; 속성이 추가된 클래스가 override 하면 보임 */
+
+.clicked {
+  color : #DF4718;
+}
+
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  } to{
+    opacity: 1;
+  }
+}
+
+/* The @keyframes rule specifies the animation code. */
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn .3s linear;
+}
